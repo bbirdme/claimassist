@@ -42,6 +42,12 @@ actually got built and run:
 
 ## Results
 
+See [phase-0-results-explained.md](./phase-0-results-explained.md) for a
+deeper walkthrough of these numbers — an actual token-split example, why
+prompt tokens vs. completion tokens diverge for different reasons, and real
+dollar-cost math using current provider pricing applied to our measured token
+counts.
+
 | Prompt | Provider | Prompt tokens | Completion tokens | Latency |
 |---|---|---|---|---|
 | factual_short | ollama | 33 | 417 | 28.09s |
