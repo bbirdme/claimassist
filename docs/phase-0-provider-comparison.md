@@ -46,7 +46,10 @@ See [phase-0-results-explained.md](./phase-0-results-explained.md) for a
 deeper walkthrough of these numbers — an actual token-split example, why
 prompt tokens vs. completion tokens diverge for different reasons, and real
 dollar-cost math using current provider pricing applied to our measured token
-counts.
+counts. See
+[phase-0-prompt-vs-completion-tokens.md](./phase-0-prompt-vs-completion-tokens.md)
+for a follow-up correction on what actually drives prompt-token differences
+(vocabulary vs. hidden chat-template overhead).
 
 | Prompt | Provider | Prompt tokens | Completion tokens | Latency |
 |---|---|---|---|---|
