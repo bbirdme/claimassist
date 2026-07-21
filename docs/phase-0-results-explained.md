@@ -42,8 +42,13 @@ another.
 
 Two different phenomena are hiding in this table:
 
-- **Prompt tokens** (same input text, different count): pure tokenizer
-  vocabulary difference — exactly what the split above illustrates.
+- **Prompt tokens** (same input text, different count): partly tokenizer
+  vocabulary, but — as a follow-up test revealed — mostly something else
+  entirely. See
+  [phase-0-prompt-vs-completion-tokens.md](./phase-0-prompt-vs-completion-tokens.md)
+  for the corrected, verified explanation; the original claim here (that this
+  was "pure tokenizer vocabulary difference") turned out to be substantially
+  wrong.
 - **Completion tokens** (same question, wildly different output length): this
   is **not** tokenization, it's the model choosing to write more or less. On
   `factual_short`, Gemini wrote a 931-token answer (with headers, a worked
