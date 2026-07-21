@@ -1,0 +1,125 @@
+[
+  {
+    "provider": "ollama",
+    "model": "llama3.2:3b",
+    "response_text": "Subrogation is a legal concept in the context of insurance that allows an insurer to recover damages or losses it has paid out to its policyholder from the party responsible for those damages. In other words, if an insurer pays out on a claim, it can then sue the at-fault party (or their insurance company) for the amount it paid, and keep the recovery as a fraction of its own loss.\n\nHere's how subrogation typically works:\n\n1. The policyholder makes a claim under their policy and receives payment from the insurer.\n2. Later, it is discovered that the damage or loss was caused by another party (e.g., an at-fault driver).\n3. The insurer discovers this new information and decides to pursue subrogation.\n\nThe insurer can then:\n\n1. Sue the at-fault party or their insurance company for the amount they paid out on the claim.\n2. Negotiate a settlement with the at-fault party's insurance company, where the insurer receives a percentage of its original payment (usually 50%).\n3. Take the case to court and recover the full amount from the at-fault party.\n\nThe purpose of subrogation is to ensure that the policyholder does not lose money on their claim, as they would have if they had paid out of pocket for damages or losses themselves. By recovering some or all of its loss through subrogation, the insurer can pass those costs on to the at-fault party.\n\nFor example:\n\n* John's car is damaged in an accident caused by Sarah, who has insurance.\n* John files a claim with his own insurance company and receives $10,000.\n* Later, it is discovered that Sarah had liability insurance and her policy covers damages up to $15,000.\n* The insurer sues Sarah's insurance company for subrogation and recovers 50% of its original payment ($5,000), which is then paid back to John.\n\nSubrogation can be a complex process, and insurers may have specific rules or procedures in place regarding subrogation.",
+    "prompt_tokens": 33,
+    "completion_tokens": 417,
+    "latency_seconds": 28.093110462999903,
+    "cost_usd": 0.0,
+    "prompt_id": "factual_short",
+    "category": "short_factual"
+  },
+  {
+    "provider": "groq",
+    "model": "llama-3.3-70b-versatile",
+    "response_text": "Subrogation is a concept in insurance where an insurance company seeks to recover the amount it has paid to its policyholder (the insured) from a third party who is responsible for the loss or damage. The purpose of subrogation is to shift the financial burden from the insurance company to the party who caused the loss.\n\nHere's how it works:\n\n1. **The insured files a claim**: The policyholder (the insured) files a claim with their insurance company for a loss or damage.\n2. **The insurance company pays the claim**: The insurance company pays the claim to the insured, up to the policy limits.\n3. **The insurance company investigates**: The insurance company investigates the incident to determine who was responsible for the loss or damage.\n4. **The insurance company pursues subrogation**: If the investigation reveals that a third party was responsible for the loss or damage, the insurance company will pursue subrogation against that party.\n5. **The insurance company recovers the amount paid**: If the subrogation is successful, the insurance company will recover the amount it paid to the insured from the responsible third party.\n\nSubrogation is commonly used in various types of insurance, including:\n\n* Auto insurance: If another driver is responsible for an accident, the insurance company may pursue subrogation against that driver's insurance company.\n* Homeowners insurance: If a neighbor's tree falls on a policyholder's house, the insurance company may pursue subrogation against the neighbor's insurance company.\n* Workers' compensation insurance: If an employee is injured on the job due to the negligence of a third party, the insurance company may pursue subrogation against that party.\n\nThe benefits of subrogation include:\n\n* **Reduced insurance costs**: By recovering amounts paid from responsible third parties, insurance companies can reduce their costs and keep premiums lower.\n* **Increased fairness**: Subrogation helps to ensure that the party responsible for the loss or damage bears the financial burden, rather than the insurance company or the insured.\n\nOverall, subrogation is an important concept in insurance that helps to promote fairness and reduce costs for all parties involved.",
+    "prompt_tokens": 43,
+    "completion_tokens": 433,
+    "latency_seconds": 1.4041410160000396,
+    "cost_usd": 0.0,
+    "prompt_id": "factual_short",
+    "category": "short_factual"
+  },
+  {
+    "provider": "gemini",
+    "model": "gemini-flash-latest",
+    "response_text": "**Subrogation** is a legal right held by most insurance companies that allows them to \"step into the shoes\" of their policyholder to pursue a third party that caused an insurance loss. \n\nIn simple terms: **If someone else causes damage to you or your property, and your insurance company pays for the repairs, subrogation is the process your insurer uses to get that money back from the at-fault party (or their insurance company).**\n\nHere is a detailed breakdown of how subrogation works, why it matters, and a real-world example.\n\n---\n\n### How the Subrogation Process Works (Step-by-Step)\n\n1. **The Incident:** An accident or event occurs where someone else is at fault (e.g., another driver rear-ends your car, or a neighbor\u2019s tree falls on your roof).\n2. **The Claim:** Instead of waiting for the at-fault party's insurance to pay (which can take months), you file a claim with your own insurance company.\n3. **The Payout:** Your insurance company pays to repair your damages, minus your **deductible** (the amount you pay out-of-pocket).\n4. **Subrogation Initiated:** Your insurance company legally assumes your right to sue or collect damages from the at-fault party. They contact the at-fault party\u2019s insurance to demand reimbursement.\n5. **The Recovery:** If successful, the at-fault party's insurer pays your insurer back.\n6. **Deductible Refund:** Once your insurer recovers the money, they are legally required to refund your deductible (or a pro-rated portion of it).\n\n---\n\n### A Real-World Example\n\nImagine you are driving and **Driver B** runs a red light and hits your car, causing $10,000 in damage. \n\n* You have a **$1,000 deductible** on your collision coverage.\n* Because you need your car fixed immediately, you file a claim with your own insurer.\n* Your insurer pays **$9,000** to the repair shop, and you pay your **$1,000** deductible.\n* Through **subrogation**, your insurer goes after Driver B\u2019s insurance company for the full **$10,000**.\n* Once Driver B's insurance pays your insurer the $10,000, your insurer sends you a check for your **$1,000 deductible**. \n\n---\n\n### Why is Subrogation Important?\n\n* **It saves you money:** By successfully recovering funds from the at-fault party, insurance companies keep their overall losses lower, which helps keep insurance premiums affordable for everyone.\n* **It gets you paid faster:** You don\u2019t have to wait for a lengthy legal dispute between insurance companies to get your car repaired or your house fixed. Your insurer pays you upfront and fights the battle later.\n* **It prevents \"double-dipping\":** You cannot collect money from your own insurance company *and* sue the at-fault driver to keep the cash for the same damages. Subrogation ensures you are made \"whole\" but do not profit from an accident.\n\n---\n\n### What is a \"Waiver of Subrogation\"?\n\nYou might see this term in business, construction, or lease contracts. A **Waiver of Subrogation** is an agreement where you prevent your insurance company from going after the third party to recover funds. \n\n* **Example:** In a commercial lease, a landlord and tenant might agree to a waiver of subrogation. If the tenant accidentally starts a fire, the landlord's insurance pays for the damage but is legally blocked from suing the tenant to get that money back. \n* *Note:* You should never sign a waiver of subrogation without consulting your insurance provider, as doing so could void your policy.\n\n---\n\n### What You Should Do During Subrogation\n\nIf your insurer is pursuing subrogation:\n1. **Cooperate with your insurer:** They may need statements, photos, or police reports from you to win the case.\n2. **Do not sign waivers with the at-fault party:** If the at-fault driver offers you cash to \"settle things privately\" and asks you to sign a release of liability, **do not sign it**. Doing so destroys your insurer's right to subrogation, and they may refuse to pay your claim or demand you pay them back.",
+    "prompt_tokens": 8,
+    "completion_tokens": 931,
+    "latency_seconds": 8.848295091000182,
+    "cost_usd": 0.0,
+    "prompt_id": "factual_short",
+    "category": "short_factual"
+  },
+  {
+    "provider": "ollama",
+    "model": "llama3.2:3b",
+    "response_text": "Here is a 3-sentence summary of the insurance claim narrative for a case worker who hasn't read it yet:\n\nMaria Gutierrez is filing an insurance claim (Policy #HO-88213-4) due to damage caused by a severe wind and hail storm that occurred on March 3, 2026. The damages include missing roof shingles, a cracked skylight, water staining on the ceiling, and downed fence panels, with estimated repair costs totaling $9,650. The policy has a deductible of $2,500 and a dwelling coverage limit of $350,000, which may impact Maria's claim payout.",
+    "prompt_tokens": 375,
+    "completion_tokens": 130,
+    "latency_seconds": 11.65322640599993,
+    "cost_usd": 0.0,
+    "prompt_id": "claim_summary",
+    "category": "long_context_summary"
+  },
+  {
+    "provider": "groq",
+    "model": "llama-3.3-70b-versatile",
+    "response_text": "Here is a summary of the insurance claim narrative in 3 sentences:\n\nMaria Gutierrez, policy #HO-88213-4, is filing a claim for damages to her home at 214 Birchwood Lane, Springfield, resulting from a severe wind and hail storm on March 3, 2026. The claim includes damage to the roof, skylight, and ceiling, as well as a blown-down fence panel and a dented garage roof, with estimated repair costs totaling $9,650. The claimant has provided photos and contractor estimates to support her claim, and the policy has a $2,500 wind/hail deductible and a $350,000 dwelling coverage limit.",
+    "prompt_tokens": 385,
+    "completion_tokens": 140,
+    "latency_seconds": 0.8159802680002031,
+    "cost_usd": 0.0,
+    "prompt_id": "claim_summary",
+    "category": "long_context_summary"
+  },
+  {
+    "provider": "gemini",
+    "model": "gemini-flash-latest",
+    "response_text": "On March 3, 2026, a severe wind and hail storm damaged policyholder Maria Gutierrez's property, causing missing shingles, a leaking cracked skylight, a downed wooden fence, and a dented detached garage roof. The claimant has provided supporting photos and a neighbor's corroborating statement, noting that her six-year-old roof has no prior history of leaks or claims. She has submitted repair estimates totaling $9,650 ($8,450 for dwelling repairs and $1,200 for the fence) to be processed against her policy's $2,500 wind/hail deductible.",
+    "prompt_tokens": 360,
+    "completion_tokens": 134,
+    "latency_seconds": 4.669047599000123,
+    "cost_usd": 0.0,
+    "prompt_id": "claim_summary",
+    "category": "long_context_summary"
+  },
+  {
+    "provider": "ollama",
+    "model": "llama3.2:3b",
+    "response_text": "{\"claimant_name\": \"Maria Gutierrez\", \"policy_number\": \"HO-88213-4\", \"date_of_loss\": \"2026-03-03\", \"deductible_usd\": 2500, \"total_estimated_repair_cost_usd\": 10550}",
+    "prompt_tokens": 395,
+    "completion_tokens": 61,
+    "latency_seconds": 8.47177155899999,
+    "cost_usd": 0.0,
+    "prompt_id": "claim_extraction",
+    "category": "structured_output",
+    "valid_json": true,
+    "parsed_json": {
+      "claimant_name": "Maria Gutierrez",
+      "policy_number": "HO-88213-4",
+      "date_of_loss": "2026-03-03",
+      "deductible_usd": 2500,
+      "total_estimated_repair_cost_usd": 10550
+    }
+  },
+  {
+    "provider": "groq",
+    "model": "llama-3.3-70b-versatile",
+    "response_text": "```json\n{\n  \"claimant_name\": \"Maria Gutierrez\",\n  \"policy_number\": \"HO-88213-4\",\n  \"date_of_loss\": \"March 3, 2026\",\n  \"deductible_usd\": 2500,\n  \"total_estimated_repair_cost_usd\": 9450\n}\n```",
+    "prompt_tokens": 405,
+    "completion_tokens": 73,
+    "latency_seconds": 0.4267801789999339,
+    "cost_usd": 0.0,
+    "prompt_id": "claim_extraction",
+    "category": "structured_output",
+    "valid_json": true,
+    "parsed_json": {
+      "claimant_name": "Maria Gutierrez",
+      "policy_number": "HO-88213-4",
+      "date_of_loss": "March 3, 2026",
+      "deductible_usd": 2500,
+      "total_estimated_repair_cost_usd": 9450
+    }
+  },
+  {
+    "provider": "gemini",
+    "model": "gemini-flash-latest",
+    "response_text": "```json\n{\n  \"claimant_name\": \"Maria Gutierrez\",\n  \"policy_number\": \"HO-88213-4\",\n  \"date_of_loss\": \"March 3, 2026\",\n  \"deductible_usd\": 2500,\n  \"total_estimated_repair_cost_usd\": 9650\n}\n```",
+    "prompt_tokens": 385,
+    "completion_tokens": 91,
+    "latency_seconds": 4.103805812000019,
+    "cost_usd": 0.0,
+    "prompt_id": "claim_extraction",
+    "category": "structured_output",
+    "valid_json": true,
+    "parsed_json": {
+      "claimant_name": "Maria Gutierrez",
+      "policy_number": "HO-88213-4",
+      "date_of_loss": "March 3, 2026",
+      "deductible_usd": 2500,
+      "total_estimated_repair_cost_usd": 9650
+    }
+  }
+]
