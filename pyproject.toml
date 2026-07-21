@@ -1,0 +1,11 @@
+[project]
+name = "claimassist"
+version = "0.1.0"
+description = "Add your description here"
+requires-python = ">=3.12"
+dependencies = [
+    "google-genai>=2.12.1",
+    "groq>=1.5.0",
+    "python-dotenv>=1.2.2",
+    "requests>=2.34.2",
+]
