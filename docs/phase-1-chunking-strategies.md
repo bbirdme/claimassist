@@ -18,13 +18,16 @@ project's standard decision-doc format.
    documents, our known section headers (DECLARATIONS, COVERAGE SUMMARY,
    DEDUCTIBLES AND LIMITS, EXCLUSIONS, DEFINITIONS); for claims and medical
    notes, which don't have rigid sections, paragraph boundaries (blank lines).
-3. **Semantic** — not yet implemented. Requires sentence embeddings to detect
-   topic shifts, so it's being built alongside the embedding-model comparison
-   step next, rather than as a separate one-off.
+3. **Semantic** — groups consecutive sentences by embedding similarity,
+   starting a new chunk when similarity between adjacent sentences drops
+   below a threshold (0.5 in this test). Uses Ollama's local embedding model
+   (free, no rate limits) purely for the chunking mechanism itself, separate
+   from the 2 embedding models being compared for retrieval in
+   [phase-1-embedding-comparison.md](./phase-1-embedding-comparison.md).
 
 Code: `src/ingestion/chunking/fixed_size.py`,
-`src/ingestion/chunking/structural.py`, run against the real corpus via
-`src/ingestion/chunking/compare.py`.
+`src/ingestion/chunking/structural.py`, `src/ingestion/chunking/semantic.py`,
+run against the real corpus via `src/ingestion/chunking/compare.py`.
 
 ## Test case 1: HO-88213-4 (policy document, 2,248 chars, direct PDF extraction)
 
@@ -98,9 +101,54 @@ notes specifically, but it's worth being honest that this depended on the
 generated prose happening to paragraph-break in the right places — not a
 structural guarantee the way section headers are for policy documents.
 
+## Semantic chunking: two real findings, one bug and one genuine limitation
+
+Running semantic chunking on the same two documents surfaced two problems —
+one was a bug worth fixing, the other is a real limitation worth keeping.
+
+### Finding 6 (bug, fixed): naive sentence splitting breaks on abbreviations
+
+The first version of the sentence splitter produced a chunk that was
+literally `"Mr."` — 3 characters — because a period-based regex treated "Mr."
+as a sentence boundary, splitting "Mr. Whitfield" into two fake sentences.
+Fixed by merging fragments that end in a common abbreviation (Mr., Dr., Inc.,
+etc.) back into the next fragment before treating a period as a true sentence
+end. This is a well-known class of bug with naive sentence splitters; a real
+NLP tokenizer (spaCy, etc.) handles it more generally, which wasn't worth the
+extra dependency for this test.
+
+### Finding 7 (real limitation, not fixed): a single similarity threshold can't separate "different section" from "same section, natural variance"
+
+For HO-88213-4, semantic chunking collapsed almost the entire document into
+2 giant chunks (1,826 + 419 chars) — far coarser than structural chunking's 6
+sections. Inspecting the actual sentence-to-sentence cosine similarities
+explains why: cross-section transitions scored 0.54–0.70, but *within-section*
+sentence pairs scored as low as 0.54–0.58 too (e.g. between two different
+term definitions inside the same DEFINITIONS section). The only similarity
+score that stood out clearly was 0.380, at the transition into the closing
+signature/boilerplate block — a genuinely different register, not just a
+different topic.
+
+In formal, stylistically uniform documents like insurance policies, sentences
+share enough vocabulary and register that a single global similarity
+threshold can't reliably separate "topic changed" from "still the same topic,
+just naturally varied wording." This wasn't cherry-picked away by tuning the
+threshold — the actual overlap between within-section and cross-section
+similarity scores means no single fixed threshold would cleanly separate them
+for this document. A more robust approach would likely combine structural
+boundaries (hard section breaks) with semantic similarity only *within* a
+section for finer splits, rather than relying on semantic similarity alone
+across an entire document.
+
+For the claim narrative, semantic chunking did better — 3 chunks, including
+isolating `"However, as per policy terms, a collision deductible applies to
+this claim."` as its own chunk, a genuinely sensible boundary (a short
+transitional/procedural sentence between the vehicle-damage description and
+the injury description). Shorter, less formulaic prose seems to give the
+threshold-based approach a better chance.
+
 ## What's not yet tested
 
-- **Semantic chunking** — pending, to be built alongside embeddings.
 - **Chunk size sensitivity** — this test used 500 chars for fixed-size
   arbitrarily; smaller windows would reduce the mid-word problem's *visual*
   severity but not eliminate it, and would increase total chunk count (more

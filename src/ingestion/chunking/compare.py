@@ -1,6 +1,7 @@
 from src.ingestion.load_corpus import load_corpus
 from src.ingestion.chunking.fixed_size import fixed_size_chunk
 from src.ingestion.chunking.structural import structural_chunk
+from src.ingestion.chunking.semantic import semantic_chunk
 
 
 def show(doc_id: str):
@@ -9,6 +10,7 @@ def show(doc_id: str):
 
     fixed = fixed_size_chunk(doc.text, chunk_size=500, overlap=50)
     structural = structural_chunk(doc.text, doc.doc_type)
+    semantic = semantic_chunk(doc.text)
 
     print(f"=== {doc_id} ({doc.doc_type}, {len(doc.text)} chars) ===\n")
 
@@ -18,6 +20,10 @@ def show(doc_id: str):
 
     print(f"\n--- structural: {len(structural)} chunks ---")
     for i, c in enumerate(structural):
+        print(f"[{i}] ({len(c)} chars) {c[:120]!r}")
+
+    print(f"\n--- semantic: {len(semantic)} chunks ---")
+    for i, c in enumerate(semantic):
         print(f"[{i}] ({len(c)} chars) {c[:120]!r}")
     print()
 
