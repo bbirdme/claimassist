@@ -1,0 +1,46 @@
+**EMERGENCY DEPARTMENT CLINICAL VISIT NOTE**
+
+**Patient Information:**
+
+* Name: Sofia Ramirez
+* Date of Birth: [Not provided]
+* Primary Contact: [Not provided]
+
+**Chief Complaint:**
+
+Patient presents with acute onset of right wrist pain and swelling after a fall at home. Patient reports experiencing a significant trauma to the wrist.
+
+**Assessment:**
+
+Vital Signs:
+- Temperature: 98.6°F (37°C)
+- Blood Pressure: 120/80 mmHg
+- Pulse: 100 beats/min
+
+Physical Examination:
+- Tenderness and swelling in right wrist
+- Limited range of motion in right wrist
+- No neurovascular compromise noted
+
+Diagnostic Results:
+- X-ray of the right wrist revealed a distal radius fracture
+
+**Plan:**
+
+* Patient was evaluated and treated for acute distal radius fracture.
+* Closed reduction under procedural sedation performed to manage pain and facilitate alignment.
+* Cast applied to immobilize the affected area.
+* Discharged same day with instructions for follow-up care.
+
+**Referrals/Orders:**
+
+* Orthopedic follow-up referral scheduled for [date]
+
+**Discharge Information:**
+
+* Patient was discharged home on the same day with orders to report any worsening symptoms or concerns to their primary care physician.
+* Patient advised to follow up with orthopedic specialist as scheduled.
+
+**Charge:**
+
+$4,800

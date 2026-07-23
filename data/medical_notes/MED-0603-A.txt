@@ -1,0 +1,34 @@
+**Patient Name:** Sofia Ramirez
+**Visit Date:** June 3, 2026
+**Procedure Code:** Follow-up for Distal Radius Fracture
+
+**Chief Complaint:**
+None reported.
+
+**Assessment:**
+The patient presented for follow-up on her distal radius fracture. The cast is intact and has been in place for the prescribed duration. The recent X-ray shows evidence of healing, consistent with expectations at this stage of treatment. The patient is asymptomatic and ambulates normally.
+
+**Medical History:** None reported.
+
+**Physical Examination:**
+- Inspection: Normal.
+- palpation: No signs of pain or swelling were noted.
+- range of motion: Full.
+- gait: Normal.
+- Neurological examination: Normal.
+
+**Plan:**
+
+1. Continue cast for 3 additional weeks as previously prescribed to allow complete healing.
+2. Schedule a physical therapy referral to begin after cast removal, approximately 4 weeks from today's date.
+3. Patient will be contacted by the physical therapist prior to cast removal to schedule an initial appointment.
+
+**Medications:** None reported.
+
+**Discharge Instructions:**
+- Follow all instructions provided for care of the distal radius fracture.
+- Return to clinic in 3 weeks to check on healing progress and remove the cast.
+
+**Radiology Results:** Follow-up X-ray shows evidence of healing on track.
+
+**Charge:** $320

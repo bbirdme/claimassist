@@ -4,8 +4,8 @@ from pathlib import Path
 
 from dotenv import load_dotenv
 
-from providers import call_ollama, call_groq, call_gemini
-from prompts import PROMPTS
+from src.integrations.llm_providers import call_ollama, call_groq, call_gemini
+from src.eval.phase0.prompts import PROMPTS
 
 PROVIDERS = [call_ollama, call_groq, call_gemini]
 

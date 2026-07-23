@@ -1,0 +1,32 @@
+**URGENT CARE CLINIC NOTE**
+
+**Patient Information:**
+Name: James Whitfield
+Date of Birth: [Not provided]
+Visit Date: April 12, 2026
+
+**Chief Complaint:**
+The patient reports neck pain and stiffness following a motor vehicle accident earlier today. The patient is experiencing discomfort in the cervical region.
+
+**Assessment:**
+The patient has been diagnosed with cervical strain (whiplash) following a motor vehicle collision. A cervical spine X-ray was performed, which revealed no fractures. The patient's symptoms are consistent with this diagnosis.
+
+**Vital Signs:**
+[Not provided]
+
+**Medications:**
+Ibuprofen administered as ordered by physician.
+
+**Treatment Plan:**
+The patient is recommended to wear a soft cervical collar to alleviate discomfort and promote healing. Follow-up appointment in 2 weeks is scheduled if symptoms persist or worsen.
+
+**Follow-Up Instructions:**
+The patient is advised to follow up with their primary care provider in 2 weeks if symptoms do not improve or worsen.
+
+**Charge Information:**
+Charge amount: $450.00
+
+**Signature and Date:**
+[Physician's signature] [Date]
+
+Note: Please note that this is a minimal note, as the facts provided only include a chief complaint, assessment, and treatment plan, without any additional relevant information such as vital signs or medication administration notes.
