@@ -1,0 +1,42 @@
+AU-3387-1 INSURANCE POLICY DOCUMENT
+
+DECLARATIONS
+
+This policy is issued by [Insurer Name] to James Whitfield (the Policyholder) for the period from August 1, 2025, to August 1, 2026. The policy covers a 2019 Honda Accord vehicle owned and registered in [State/Province].
+
+COVERAGE SUMMARY
+
+The policy provides liability coverage up to $100,000 per person/$300,000 per occurrence, and uninsured motorist coverage up to $100,000 per person/$300,000 per occurrence.
+
+DEDUCTIBLES AND LIMITS
+
+Schedule of Deductibles and Limits:
+
+| Coverage Type | Deductible Amount |
+| --- | --- |
+| Collision | $500 |
+| Comprehensive | $250 |
+
+LIMITS OF LIABILITY:
+
+* Liability: $100,000 per person/$300,000 per occurrence
+* Uninsured Motorist: $100,000 per person/$300,000 per occurrence
+
+EXCLUSIONS
+
+The following are excluded from coverage under this policy:
+
+* Racing or speed contests
+* Commercial use of the vehicle
+* Intentional damage
+* Use of the vehicle to commit a crime
+
+DEFINITIONS
+
+For purposes of this policy, the following terms shall be defined as follows:
+
+1. Deductible: The amount that the Policyholder must pay out-of-pocket before the insurer begins paying coverage for a specific loss or claim.
+2. Dwelling Coverage: Not applicable in this policy type, as it refers to coverage for the Policyholder's primary residence.
+3. Collision: Damage to the vehicle caused by another vehicle, object, or person, resulting in physical contact between vehicles or objects.
+
+Note that due to the lack of dwelling coverage and racing exclusions mentioned above being part of an riders (which is empty) this policy can be further adjusted as needed
