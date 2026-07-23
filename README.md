@@ -39,8 +39,9 @@ This table is updated at the end of every phase.
   - [Google Gemini](https://aistudio.google.com) (`google-genai`) — hosted, free tier
   - [Groq](https://console.groq.com) (`groq`) — hosted, free tier, serves open-weight models
   - [Ollama](https://ollama.com) — fully local, open-weight models, no API key
-- Stack grows as later phases add pgvector, LangGraph, Langfuse/OpenTelemetry,
-  vLLM, etc. — see `CLAUDE.md` for the full plan.
+- **Vector store:** [pgvector](https://github.com/pgvector/pgvector) (Postgres 17), via Docker
+- Stack grows as later phases add LangGraph, Langfuse/OpenTelemetry, vLLM,
+  etc. — see `CLAUDE.md` for the full plan.
 
 ## Setup
 
@@ -58,6 +59,11 @@ cp .env.example .env
 Gemini and Groq both have genuine free tiers (no credit card required):
 - Gemini key: [aistudio.google.com](https://aistudio.google.com) → "Get API key"
 - Groq key: [console.groq.com](https://console.groq.com) → "API Keys"
+
+For pgvector, start the local Postgres container:
+```bash
+cd infra && docker compose up -d
+```
 
 For the local model, install [Ollama](https://ollama.com/download) and pull a
 small model:

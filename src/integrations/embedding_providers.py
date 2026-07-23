@@ -2,6 +2,7 @@ import os
 
 import requests
 from google import genai
+from google.genai import types
 
 
 def embed_ollama(text: str, model: str = "nomic-embed-text", host: str = "http://127.0.0.1:11434") -> list[float]:
@@ -10,9 +11,10 @@ def embed_ollama(text: str, model: str = "nomic-embed-text", host: str = "http:/
     return resp.json()["embeddings"][0]
 
 
-def embed_gemini(text: str, model: str = "gemini-embedding-001") -> list[float]:
+def embed_gemini(text: str, model: str = "gemini-embedding-001", output_dimensionality: int | None = None) -> list[float]:
     client = genai.Client(api_key=os.environ["GEMINI_API_KEY"])
-    resp = client.models.embed_content(model=model, contents=text)
+    config = types.EmbedContentConfig(output_dimensionality=output_dimensionality) if output_dimensionality else None
+    resp = client.models.embed_content(model=model, contents=text, config=config)
     return resp.embeddings[0].values
 
 
