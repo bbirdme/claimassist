@@ -1,0 +1,15 @@
+services:
+  postgres:
+    image: pgvector/pgvector:pg17
+    container_name: claimassist-postgres
+    environment:
+      POSTGRES_USER: ${POSTGRES_USER:-claimassist}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-claimassist}
+      POSTGRES_DB: ${POSTGRES_DB:-claimassist}
+    ports:
+      - "5435:5432"
+    volumes:
+      - claimassist_pgdata:/var/lib/postgresql/data
+
+volumes:
+  claimassist_pgdata:

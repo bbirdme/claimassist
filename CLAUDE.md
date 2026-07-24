@@ -115,5 +115,5 @@ claimassist/
   decision doc doesn't count as done.
 
 ## Current status
-Phase: 0 complete (docs/phase-0-provider-comparison.md). Phase 1 (RAG Architecture) not started.
-Last updated: 2026-07-21
+Phase: 1 complete (docs/phase-1-rag-architecture.md). Phase 2 (Agent Architecture) not started.
+Last updated: 2026-07-24
