@@ -21,7 +21,7 @@ behind it.
 | Phase | Topic | Status | Decision doc |
 |---|---|---|---|
 | 0 | LLM Fundamentals | ✅ Done | [phase-0-provider-comparison.md](./docs/phase-0-provider-comparison.md) |
-| 1 | RAG Architecture | Not started | — |
+| 1 | RAG Architecture | ✅ Done | [phase-1-rag-architecture.md](./docs/phase-1-rag-architecture.md) |
 | 2 | Agent Architecture | Not started | — |
 | 3 | Integration Architecture | Not started | — |
 | 4 | Security & Compliance | Not started | — |
