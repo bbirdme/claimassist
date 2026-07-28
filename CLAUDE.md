@@ -115,5 +115,5 @@ claimassist/
   decision doc doesn't count as done.
 
 ## Current status
-Phase: 2 complete (docs/phase-2-agent-architecture.md). Phase 3 (Integration Architecture) not started.
+Phase: 3 complete (docs/phase-3-integration-architecture.md). Phase 4 (Security & Compliance Architecture) not started.
 Last updated: 2026-07-24

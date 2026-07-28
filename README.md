@@ -23,7 +23,7 @@ behind it.
 | 0 | LLM Fundamentals | ✅ Done | [phase-0-provider-comparison.md](./docs/phase-0-provider-comparison.md) |
 | 1 | RAG Architecture | ✅ Done | [phase-1-rag-architecture.md](./docs/phase-1-rag-architecture.md) |
 | 2 | Agent Architecture | ✅ Done | [phase-2-agent-architecture.md](./docs/phase-2-agent-architecture.md) |
-| 3 | Integration Architecture | Not started | — |
+| 3 | Integration Architecture | ✅ Done | [phase-3-integration-architecture.md](./docs/phase-3-integration-architecture.md) |
 | 4 | Security & Compliance | Not started | — |
 | 5 | Observability & Evaluation | Not started | — |
 | 6 | Cost & Deployment | Not started | — |
@@ -41,6 +41,7 @@ This table is updated at the end of every phase.
   - [Ollama](https://ollama.com) — fully local, open-weight models, no API key
 - **Vector store:** [pgvector](https://github.com/pgvector/pgvector) (Postgres 17), via Docker
 - **Agent orchestration:** [LangGraph](https://github.com/langchain-ai/langgraph) (multi-agent pipeline, human-in-the-loop via `interrupt()`)
+- **Integration:** [FastAPI](https://fastapi.tiangolo.com) (mock enterprise API with OAuth2 client-credentials auth, API gateway with rate limiting)
 - Stack grows as later phases add Langfuse/OpenTelemetry, vLLM, etc. — see
   `CLAUDE.md` for the full plan.
 
@@ -70,6 +71,14 @@ For the local model, install [Ollama](https://ollama.com/download) and pull a
 small model:
 ```bash
 ollama pull llama3.2:3b
+```
+
+For the agent's tools to reach claim/policy data, the mock enterprise API
+must be running (the API gateway is only needed if you're calling the agent
+through it, not for direct script/CLI usage):
+```bash
+uv run uvicorn src.integrations.enterprise_api.main:app --port 8001
+uv run uvicorn src.integrations.api_gateway.main:app --port 8010  # optional
 ```
 
 ## Repo structure

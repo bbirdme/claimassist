@@ -76,6 +76,8 @@ def check_claim_against_policy(claim: dict, policy: dict) -> list[dict]:
 if __name__ == "__main__":
     import json
     import sys
+    from dotenv import load_dotenv
+    load_dotenv()
 
     claim_id = sys.argv[1] if len(sys.argv) > 1 else "CLM-2026-0301"
     print(json.dumps(check_claim(claim_id), indent=2))
