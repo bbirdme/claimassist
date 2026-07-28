@@ -5,28 +5,29 @@ Deliberately NOT semantic/vector search: claim IDs and policy numbers are
 always known, exact identifiers in this task, and Phase 1 (see
 docs/phase-1-hybrid-search.md) found that exact-identifier lookups are
 reliably handled by structured data access, not by ranking algorithms over
-free text. These tools query the ground-truth facts directly.
+free text.
+
+As of Phase 3, these call the mock enterprise API over HTTP (OAuth2
+client-credentials auth) instead of importing src/corpus_gen/facts.py
+directly - the agent no longer has direct access to claim/policy data, the
+same as it wouldn't against a real insurer's backend system. See
+src/integrations/enterprise_client.py and
+src/integrations/enterprise_api/main.py.
 """
 
-from src.corpus_gen.facts import POLICIES, CLAIMS, MEDICAL_NOTES
+from src.integrations.enterprise_client import get_claim, get_policy, get_medical_notes
 
 
 def lookup_claim(claim_id: str) -> dict:
-    claim = next((c for c in CLAIMS if c["claim_id"] == claim_id), None)
-    if claim is None:
-        return {"error": f"No claim found with ID {claim_id}"}
-    return claim
+    return get_claim(claim_id)
 
 
 def lookup_policy(policy_number: str) -> dict:
-    policy = next((p for p in POLICIES if p["policy_number"] == policy_number), None)
-    if policy is None:
-        return {"error": f"No policy found with number {policy_number}"}
-    return policy
+    return get_policy(policy_number)
 
 
 def lookup_medical_notes(claim_id: str) -> list[dict]:
-    return [n for n in MEDICAL_NOTES if n["claim_id"] == claim_id]
+    return get_medical_notes(claim_id)
 
 
 TOOL_SCHEMAS = [

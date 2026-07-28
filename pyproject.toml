@@ -4,6 +4,7 @@ version = "0.1.0"
 description = "Add your description here"
 requires-python = ">=3.12"
 dependencies = [
+    "fastapi>=0.140.7",
     "google-genai>=2.12.1",
     "groq>=1.5.0",
     "langchain-openai>=1.4.1",
@@ -13,12 +14,15 @@ dependencies = [
     "pgvector>=0.5.0",
     "pillow>=12.3.0",
     "psycopg[binary]>=3.3.4",
+    "pyjwt>=2.13.0",
     "pypdf>=6.14.2",
     "pytesseract>=0.3.13",
     "python-dotenv>=1.2.2",
+    "python-multipart>=0.0.32",
     "rank-bm25>=0.2.2",
     "reportlab>=5.0.0",
     "requests>=2.34.2",
+    "uvicorn>=0.51.0",
 ]
 
 [dependency-groups]
