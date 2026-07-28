@@ -22,7 +22,7 @@ behind it.
 |---|---|---|---|
 | 0 | LLM Fundamentals | ✅ Done | [phase-0-provider-comparison.md](./docs/phase-0-provider-comparison.md) |
 | 1 | RAG Architecture | ✅ Done | [phase-1-rag-architecture.md](./docs/phase-1-rag-architecture.md) |
-| 2 | Agent Architecture | Not started | — |
+| 2 | Agent Architecture | ✅ Done | [phase-2-agent-architecture.md](./docs/phase-2-agent-architecture.md) |
 | 3 | Integration Architecture | Not started | — |
 | 4 | Security & Compliance | Not started | — |
 | 5 | Observability & Evaluation | Not started | — |
@@ -40,8 +40,9 @@ This table is updated at the end of every phase.
   - [Groq](https://console.groq.com) (`groq`) — hosted, free tier, serves open-weight models
   - [Ollama](https://ollama.com) — fully local, open-weight models, no API key
 - **Vector store:** [pgvector](https://github.com/pgvector/pgvector) (Postgres 17), via Docker
-- Stack grows as later phases add LangGraph, Langfuse/OpenTelemetry, vLLM,
-  etc. — see `CLAUDE.md` for the full plan.
+- **Agent orchestration:** [LangGraph](https://github.com/langchain-ai/langgraph) (multi-agent pipeline, human-in-the-loop via `interrupt()`)
+- Stack grows as later phases add Langfuse/OpenTelemetry, vLLM, etc. — see
+  `CLAUDE.md` for the full plan.
 
 ## Setup
 
